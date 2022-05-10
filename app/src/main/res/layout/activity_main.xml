@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+
+    android:padding="15dp"
+    >
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/user"
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:hint="用户名"
+        android:inputType="number"
+        android:maxLines="1"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+
+        android:textSize="15sp">
+
+    </androidx.appcompat.widget.AppCompatEditText>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/psd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/user"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:drawableLeft="@drawable/ic_baseline_https_24"
+        android:hint="密码"
+        android:inputType="numberPassword"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+
+        >
+
+    </androidx.appcompat.widget.AppCompatEditText>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/logbtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/psd"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+
+
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/btn"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="登录"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+
+        >
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <TextView
+        android:id="@+id/dlydwt"
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/logbtn"
+        android:layout_marginLeft="14dp"
+        android:clickable="true"
+        android:text="找回密码"
+        android:textColor="#0066FF"
+        android:textSize="15dp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/zc"
+        android:layout_width="45dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/logbtn"
+        android:layout_marginLeft="200dp"
+        android:layout_toRightOf="@id/dlydwt"
+        android:clickable="true"
+        android:text="注册"
+        android:textColor="#0066FF"
+        android:textSize="15dp"
+
+        >
+
+    </TextView>
+</RelativeLayout>

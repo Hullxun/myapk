@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainPage">
+
+
+    <DatePicker
+        android:id="@+id/data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+    </DatePicker>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/zc_cq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/data"
+        android:hint="今日正常出勤工时"
+        android:inputType="number">
+
+    </androidx.appcompat.widget.AppCompatEditText>
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/jb_cq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="今日加班工时"
+        android:inputType="number"
+        android:layout_below="@id/zc_cq"
+
+        >
+    </androidx.appcompat.widget.AppCompatEditText>
+
+    <Button
+        android:id="@+id/startinter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jb_cq"
+        android:text="开始">
+
+    </Button>
+
+    <Button
+        android:id="@+id/startinter2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/startinter"
+        android:text="查询">
+
+    </Button>
+
+    <Button
+        android:id="@+id/startinter3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/startinter2"
+        android:text="测试">
+
+    </Button>
+
+
+</RelativeLayout>
